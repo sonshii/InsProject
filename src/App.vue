@@ -6,7 +6,7 @@
     <v-data-table 
       :headers="headers"
       :items="peoples"
-      hide-default-footer="false"
+      hide-default-footer
       class="mb-5" >
       <template v-slot:item.action="{ item }">
         <v-icon
