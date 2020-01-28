@@ -30,8 +30,8 @@
         <a class="link" text small>Создать нового клиента</a>
     </div>
 
-    <p>Для того, чтобы отредактировать или удалить клиентов из списка, перейдите в раздел <a class="link">Белые списки</a></p>
-    
+    <p class="mb-12">Для того, чтобы отредактировать или удалить клиентов из списка, перейдите в раздел <a class="link">Белые списки</a></p>
+    <v-btn class="button__custom-height ma-0 px-12 white--text"  color="grey">Сохранить изменения</v-btn>
   </div>
   </v-content> 
   </v-app>
@@ -92,6 +92,7 @@ export default {
   }
   .button__custom-height {
     height: 56px !important;
+    text-transform: none !important;
   }
   .link {
     border-bottom: 1px dashed #000;
