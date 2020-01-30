@@ -23,7 +23,8 @@
             <v-row>
               <v-col cols="12" xs="12" md="8"  class="d-flex flex-column  flex-lg-row flex-md-row flex-sm-row flex-xs-column justify-space-between align-center  mb-5">
                     <v-select
-                      :items="items"
+                      :items="conditionItem()"
+                      item-text="name"
                       label="Выбрать из списка"
                       outlined
                       class="mt-8 mr-4">
@@ -76,65 +77,74 @@ export default {
             enable: false
           },
           {
-            name: 'Константинов Константин Константинович',
+            name: 'Иванов Константин Константинович',
+            number: "+7 (912) 632-32-32",
+            group: "ГАЗПРОМ",
+            enable: true
+          },
+          {
+            name: 'Александров Константин Константинович',
+            number: "+7 (912) 632-32-32",
+            group: "ГАЗПРОМ",
+            enable: true
+          },
+          {
+            name: 'Константинов Николай Константинович',
+            number: "+7 (912) 632-32-32",
+            group: "ГАЗПРОМ",
+            enable: true
+          },
+          {
+            name: 'Николаев Константин Константинович',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
             enable: false
           },
           {
-            name: 'Константинов Константин Константинович',
+            name: 'Константинов Константин Николаевич',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
             enable: false
           },
           {
-            name: 'Константинов Константин Константинович',
+            name: 'Константинов Валера Константинович',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
             enable: false
           },
           {
-            name: 'Константинов Константин Константинович',
+            name: 'Константинов Константин Валерьевич',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
             enable: false
           },
           {
-            name: 'Константинов Константин Константинович',
-            number: "+7 (912) 632-32-32",
-            group: "ГАЗПРОМ",
-            enable: false
-          },
-          {
-            name: 'Константинов Константин Константинович',
-            number: "+7 (912) 632-32-32",
-            group: "ГАЗПРОМ",
-            enable: false
-          },
-          {
-            name: 'Константинов Константин Константинович',
-            number: "+7 (912) 632-32-32",
-            group: "ГАЗПРОМ",
-            enable: false
-          },
-          {
-            name: 'Константинов Константин Константинович',
+            name: 'Константинов Алексей Константинович',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
             enable: false
           },
           
         ],
-        items:[""]
+        
     }),
-
-  methods:{
-    deleteItem (item) {
-        const index = this.peoples.indexOf(item)
-        confirm('Вы уверены что хотите удалить элемент?') && this.peoples.splice(index, 1)
+    // computed:{
+    //   conditionItem:function(){
+    //     return this.peoples.filter(function(enable){
+    //       return enable == false;
+    //     })
+    //   }
+    // },
+    methods:{
+      deleteItem (item) {
+        const index = this.peoples.indexOf(item);
+        confirm('Вы уверены что хотите удалить элемент?') && this.peoples.splice(index, 1);
+      },
+      conditionItem(){
+        return this.peoples.filter(item =>item.enable)
+      }
     }
-  }
-};
+}
 </script>
 
 
