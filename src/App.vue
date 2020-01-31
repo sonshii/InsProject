@@ -7,7 +7,7 @@
             <div class="title mb-5 ">Клиенты этой группы</div>
             <v-data-table 
               :headers="headers"
-              :items="peoples"
+              :items="conditionItem(true)"
               hide-default-footer
               class="mb-5">
               <template v-slot:item.action="{ item }">
@@ -23,7 +23,7 @@
             <v-row>
               <v-col cols="12" xs="12" md="8"  class="d-flex flex-column  flex-lg-row flex-md-row flex-sm-row flex-xs-column justify-space-between align-center  mb-5">
                     <v-select
-                      :items="conditionItem()"
+                      :items="conditionItem(false)"
                       item-text="name"
                       label="Выбрать из списка"
                       outlined
@@ -140,8 +140,8 @@ export default {
         const index = this.peoples.indexOf(item);
         confirm('Вы уверены что хотите удалить элемент?') && this.peoples.splice(index, 1);
       },
-      conditionItem(){
-        return this.peoples.filter(item =>item.enable)
+      conditionItem(bool){
+        return this.peoples.filter(item =>item.enable === bool)
       }
     }
 }
