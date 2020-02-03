@@ -25,11 +25,11 @@
                     <v-select
                       :items="conditionItem(false)"
                       item-text="name"
-                      label="Выбрать из списка"
+                      v-model="checkedSelect"
                       outlined
                       class="mt-8 mr-4">
                     </v-select>
-                    <v-btn class="mr-4" height="56px" outlined color="primary" >Добавить</v-btn>
+                    <v-btn v-on:click="buttonClick()" class="mr-4" height="56px" outlined color="primary" >Добавить</v-btn>
                     <span class="mr-4"> или </span>
                     <a class="link" text small>Создать нового клиента</a>
               </v-col>
@@ -52,6 +52,7 @@
 export default {
   name: 'App',
   data: () =>({
+        checkedSelect: '1',
         headers: [
           {
             text: 'ФИО',
@@ -65,83 +66,86 @@ export default {
         ],
         peoples: [
           {
-            name: 'Константинов Константин Константинович',
+            name: '1',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
             enable: false
           },
           {
-            name: 'Иванов Александр Константинович',
+            name: '2',  
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ", 
             enable: false
           },
           {
-            name: 'Иванов Константин Константинович',
+            name: '3',            
+            number: "+7 (912) 632-32-32",
+            group: "ГАЗПРОМ",
+            enable: false
+          },
+          {
+            name: '4',
+            number: "+7 (912) 632-32-32",
+            group: "ГАЗПРОМ",
+            enable: false
+          },
+          {
+            name: '5',
+            number: "+7 (912) 632-32-32",
+            group: "ГАЗПРОМ",
+            enable: false
+          },
+          {
+            name: '6',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
             enable: true
           },
           {
-            name: 'Александров Константин Константинович',
+            name: '7',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
             enable: true
           },
           {
-            name: 'Константинов Николай Константинович',
+            name: '8',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
             enable: true
           },
           {
-            name: 'Николаев Константин Константинович',
+            name: '9',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
-            enable: false
+            enable: true
           },
           {
-            name: 'Константинов Константин Николаевич',
+            name: '10',
             number: "+7 (912) 632-32-32",
             group: "ГАЗПРОМ",
-            enable: false
+            enable: true
           },
-          {
-            name: 'Константинов Валера Константинович',
-            number: "+7 (912) 632-32-32",
-            group: "ГАЗПРОМ",
-            enable: false
-          },
-          {
-            name: 'Константинов Константин Валерьевич',
-            number: "+7 (912) 632-32-32",
-            group: "ГАЗПРОМ",
-            enable: false
-          },
-          {
-            name: 'Константинов Алексей Константинович',
-            number: "+7 (912) 632-32-32",
-            group: "ГАЗПРОМ",
-            enable: false
-          },
-          
         ],
         
+        
     }),
-    // computed:{
-    //   conditionItem:function(){
-    //     return this.peoples.filter(function(enable){
-    //       return enable == false;
-    //     })
-    //   }
-    // },
     methods:{
       deleteItem (item) {
         const index = this.peoples.indexOf(item);
-        confirm('Вы уверены что хотите удалить элемент?') && this.peoples.splice(index, 1);
+        if(confirm('Вы уверены что хотите удалить элемент?')){
+          this.peoples[index].enable = false;      
+        }      
       },
       conditionItem(bool){
         return this.peoples.filter(item =>item.enable === bool)
+      },
+      buttonClick(){
+        this.peoples = this.peoples.map(item=>{
+          if(item.name === this.checkedSelect){
+            item.enable = true;
+          }
+          return item;
+        })
       }
     }
 }
