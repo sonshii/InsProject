@@ -1,4 +1,5 @@
 <template>
+ <div>
   <v-row>
     <v-col >
       <v-list flat>
@@ -12,6 +13,7 @@
       </v-list>
     </v-col>
   </v-row>
+  </div>
 </template>
 
 <script>

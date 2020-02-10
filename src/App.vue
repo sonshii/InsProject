@@ -1,18 +1,18 @@
 <template>
   <v-app>
   <v-content class="ma-5 pa-1">
-    <BaseLayout/>
+    <RightContent/>
   </v-content> 
   </v-app>
 </template>
 <script>
 
-import BaseLayout from './components/BaseLayout';
+import RightContent from './components/RightContent';
 
 export default {
   name: 'App',
   components: {
-    BaseLayout,
+    RightContent,
   },
   data: () => ({
     //

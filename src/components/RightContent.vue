@@ -1,17 +1,18 @@
 <template>
-  <v-app>
+  <base-layout>
     <v-content class="ma-5 pa-1">
+      <v-container>
         <v-row>
           <v-col cols="12" xs="12" sm="12" md="12">
             <div class="title mb-5">Клиенты этой группы</div>
             <v-data-table
               :headers="headers"
-              :items="conditionItem(true)"
+              :items="checkEnable(true)"
               hide-default-footer
               class="mb-5"
             >
               <template v-slot:item.action="{ item }">
-                <v-icon small @click="deleteItem(item)">mdi-close</v-icon>
+                <v-icon small @click="deleteClient(item)">mdi-close</v-icon>
               </template>
             </v-data-table>
           </v-col>
@@ -24,14 +25,14 @@
                 class="d-flex flex-column flex-lg-row flex-md-row flex-sm-row flex-xs-column justify-space-between align-center mb-5"
               >
                 <v-select
-                  :items="conditionItem(false)"
+                  :items="checkEnable(false)"
                   item-text="name"
                   v-model="checkedSelect"
                   outlined
                   class="mt-8 mr-4"
                 ></v-select>
                 <v-btn
-                  v-on:click="buttonClick()"
+                  v-on:click="addClient()"
                   class="mr-4"
                   height="56px"
                   outlined
@@ -59,13 +60,21 @@
             </v-row>
           </v-col>
         </v-row>
+      </v-container>
     </v-content>
-  </v-app>
+  </base-layout>
 </template>
 
+
 <script>
+
+import BaseLayout from "./BaseLayout"; 
+
 export default {
   name: "App",
+  components: {
+      BaseLayout
+  },
   data: () => ({
     checkedSelect: "1",
     headers: [
@@ -79,7 +88,7 @@ export default {
       { text: "Группа", value: "group" },
       { text: "", value: "action", sortable: false }
     ],
-    peoples: [
+    clients: [
       {
         name: "1",
         number: "+7 (912) 632-32-32",
@@ -143,18 +152,29 @@ export default {
     ]
   }),
   methods: {
-    deleteItem(item) {
-      const index = this.peoples.indexOf(item);
+
+    // Удаляет клиентов из таблицы
+    // Ищет индекс выбранного элемента , в массиве с этим индексом меняет enable на false 
+
+    deleteClient(item) {                                        
+      const index = this.clients.indexOf(item); 
       if (confirm("Вы уверены что хотите удалить элемент?")) {
-        this.peoples[index].enable = false;
+        this.clients[index].enable = false;
       }
     },
-    conditionItem(bool) {
-      return this.peoples.filter(item => item.enable === bool);
+
+    // Изменяет значение enable (если true - то заносит clients в  таблицу, если false - то в select)
+
+    checkEnable(bool) {                                          
+      return this.clients.filter(item => item.enable === bool);  
     },
-    buttonClick() {
-      this.peoples = this.peoples.map(item => {
-        if (item.name === this.checkedSelect) {
+
+    // Добавляет клиентов в таблицу
+    // Проходит по массиву clients , если name = выбранному элементу в select, то enable меняет на true и заносит в таблицу
+
+    addClient() {                                                
+      this.clients = this.clients.map(item => {                   
+        if (item.name === this.checkedSelect) {                  
           item.enable = true;
         }
         return item;
