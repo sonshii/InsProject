@@ -20,7 +20,7 @@
 export default {
   data: () => ({
     headers: [
-      { text: "Название", align: "left", value: "name", sortable: false }
+      { text: "Группа", align: "left", value: "name", sortable: false }
     ],
     groups: [
       { name: "Группа-1" },

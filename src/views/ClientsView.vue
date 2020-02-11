@@ -21,7 +21,7 @@
 export default {
   data: () => ({
     headers: [
-      { text: "ФИО", align: "left", value: "name"},
+      { text: "ФИО", align: "left", value: "name", sortable: false },
       { text: "Номер телефона", value: "number" },
       { text: "Группа", value: "group" }
     ],

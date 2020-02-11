@@ -67,13 +67,12 @@
 
 
 <script>
-
-import BaseLayout from "./BaseLayout"; 
+import BaseLayout from "./BaseLayout";
 
 export default {
   name: "App",
   components: {
-      BaseLayout
+    BaseLayout
   },
   data: () => ({
     checkedSelect: "1",
@@ -152,12 +151,11 @@ export default {
     ]
   }),
   methods: {
-
     // Удаляет клиентов из таблицы
-    // Ищет индекс выбранного элемента , в массиве с этим индексом меняет enable на false 
+    // Ищет индекс выбранного элемента , в массиве с этим индексом меняет enable на false
 
-    deleteClient(item) {                                        
-      const index = this.clients.indexOf(item); 
+    deleteClient(item) {
+      const index = this.clients.indexOf(item);
       if (confirm("Вы уверены что хотите удалить элемент?")) {
         this.clients[index].enable = false;
       }
@@ -165,16 +163,16 @@ export default {
 
     // Изменяет значение enable (если true - то заносит clients в  таблицу, если false - то в select)
 
-    checkEnable(bool) {                                          
-      return this.clients.filter(item => item.enable === bool);  
+    checkEnable(bool) {
+      return this.clients.filter(item => item.enable === bool);
     },
 
     // Добавляет клиентов в таблицу
     // Проходит по массиву clients , если name = выбранному элементу в select, то enable меняет на true и заносит в таблицу
 
-    addClient() {                                                
-      this.clients = this.clients.map(item => {                   
-        if (item.name === this.checkedSelect) {                  
+    addClient() {
+      this.clients = this.clients.map(item => {
+        if (item.name === this.checkedSelect) {
           item.enable = true;
         }
         return item;
