@@ -1,18 +1,18 @@
 <template>
   <v-app>
   <v-content class="ma-5 pa-1">
-    <RightContent/>
+    <ClientsView/>
   </v-content> 
   </v-app>
 </template>
 <script>
 
-import RightContent from './components/RightContent';
+import ClientsView from './views/ClientsView';
 
 export default {
   name: 'App',
   components: {
-    RightContent,
+    ClientsView,
   },
   data: () => ({
     //
