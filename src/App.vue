@@ -1,18 +1,20 @@
 <template>
   <v-app>
-  <v-content class="ma-5 pa-1">
-    <ClientsView/>
-  </v-content> 
+    <v-container d-flex flex-row>
+      <ListPanel/>
+
+      <v-content class="ma-5 pa-1">
+        <router-view></router-view>
+      </v-content> 
+    </v-container>
   </v-app>
 </template>
 <script>
-
-import ClientsView from './views/ClientsView';
-
+import ListPanel from './components/ListPanel';
 export default {
   name: 'App',
   components: {
-    ClientsView,
+    ListPanel,
   },
   data: () => ({
     //
