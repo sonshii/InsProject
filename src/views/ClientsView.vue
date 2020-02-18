@@ -6,7 +6,7 @@
           <div class="title mb-5">Клиенты этой группы</div>
           <v-data-table
             :headers="headers"
-            :items="clients"
+            :items="allClients()"
             hide-default-footer
             class="mb-5 col-lg-12 col-md-12 col-sm-12"
           ></v-data-table>
@@ -24,59 +24,17 @@ export default {
       { text: "ФИО", align: "left", value: "name", sortable: false },
       { text: "Номер телефона", value: "number" },
       { text: "Группа", value: "group" }
-    ],
-    clients: [
-      {
-        name: "1",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      },
-      {
-        name: "2",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      },
-      {
-        name: "3",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      },
-      {
-        name: "4",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      },
-      {
-        name: "5",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      },
-      {
-        name: "6",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      },
-      {
-        name: "7",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      },
-      {
-        name: "8",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      },
-      {
-        name: "9",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      },
-      {
-        name: "10",
-        number: "+7 (912) 632-32-32",
-        group: "ГАЗПРОМ"
-      }
     ]
-  })
+  }),
+  mounted(){
+    this.allClients();
+    this.$store.dispatch('fetchClients');
+  },
+  methods: {
+     allClients(){
+      return this.$store.getters.allClients;
+    }
+  }
+
 };
 </script>
