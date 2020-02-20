@@ -6,7 +6,7 @@
           <div class="title mb-5">Группы</div>
           <v-data-table
             :headers="headers"
-            :items="allGroups()"
+            :items="allGroups"
             hide-default-footer
             class="mb-5 col-lg-12 col-md-12 col-sm-12"
           ></v-data-table>
@@ -23,13 +23,17 @@ export default {
       { text: "Группа", align: "left", value: "name", sortable: false }
     ]
   }),
-  mounted(){
-    this.allGroups();
-    this.$store.dispatch('fetchGroups');
-  },
-  methods:{
+  computed:{
     allGroups(){
       return this.$store.getters.allGroups;
+    }
+  },
+  mounted(){
+    this.initGroups();
+  },
+  methods: {
+    initGroups(){
+      this.$store.dispatch('fetchGroups');
     }
   }
 };

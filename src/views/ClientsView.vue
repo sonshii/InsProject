@@ -6,7 +6,7 @@
           <div class="title mb-5">Клиенты этой группы</div>
           <v-data-table
             :headers="headers"
-            :items="allClients()"
+            :items="allClients"
             hide-default-footer
             class="mb-5 col-lg-12 col-md-12 col-sm-12"
           ></v-data-table>
@@ -24,17 +24,21 @@ export default {
       { text: "ФИО", align: "left", value: "name", sortable: false },
       { text: "Номер телефона", value: "number" },
       { text: "Группа", value: "group" }
-    ]
+    ],
+    clients:[]
   }),
-  mounted(){
-    this.allClients();
-    this.$store.dispatch('fetchClients');
-  },
-  methods: {
-     allClients(){
+  computed:{
+    allClients(){
       return this.$store.getters.allClients;
     }
+  },
+  mounted(){
+    this.initClients();
+  },
+  methods: {
+    initClients(){
+      this.$store.dispatch('fetchClients');
+    }
   }
-
 };
 </script>
