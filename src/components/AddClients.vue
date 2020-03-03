@@ -36,13 +36,15 @@ export default {
       ],
       phone: "",
       phoneRules: [],
-      address: ""
+      address: "",
+      clientData: []
     };
   },
   computed: {
     allClients() {
       return this.$store.getters.allClients;
-    }
+    },
+    
   },
   mounted() {
     this.initClients();
@@ -51,24 +53,16 @@ export default {
     initClients() {
       this.$store.dispatch("fetchClients");
     },
-    initAddClients() {
-      this.$store.dispatch("addClients");
-    },
     addClient() {
       if (this.$refs.form.validate()) {
-        this.initAddClients(
-          this.name,
-          this.isActive,
-          this.group,
-          this.email,
-          this.phone,
-          this.address
-        );
-        console.log(this.name,this.isActive,
-        this.group,
-        this.email,
-        this.phone,
-        this.address);
+        this.clientsData = this.$store.dispatch("addClients",{
+          name: this.name,
+          isActive: this.isActive , 
+          group: this.group, 
+          email: this.email, 
+          phone: this.phone, 
+          address: this.address
+        });
       }
     }
   }

@@ -19,14 +19,9 @@ export default{
    
       ctx.commit('updateClients', clients.data)
     },
-    async addClients({commit},name,isActive,group,email,phone,address){
-      console.log(this.name,this.isActive,
-        this.group,
-        this.email,
-        this.phone,
-        this.address);
-      
-      const clients = await axios.post("http://localhost:3000/clients",{name, isActive,group, email, phone, address});
+    async addClients({commit},clientsData){
+     
+      const clients = await axios.post("http://localhost:3000/clients",{name: clientsData.name,isActive: clientsData.isActive,group:clientsData.group,email: clientsData.email,phone: clientsData.phone,address: clientsData.address});
 
       commit('newClients',clients.data)
     },
