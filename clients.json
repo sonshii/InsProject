@@ -1,0 +1,698 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "Hull Flores",
+      "isActive": false,
+      "group": "Vitricomp",
+      "email": "undefined.undefined@undefined.com",
+      "phone": "+7 (859) 513-3778",
+      "address": "618 Banner Avenue, Navarre, Northern Mariana Islands, 4042"
+    },
+    {
+      "id": 2,
+      "name": "Fuller Pate",
+      "isActive": false,
+      "group": "Anarco",
+      "email": "undefined.undefined@undefined.ca",
+      "phone": "+7 (979) 409-2269",
+      "address": "481 Bond Street, Jacksonwald, Georgia, 6063"
+    },
+    {
+      "id": 3,
+      "name": "Brooks Jacobson",
+      "isActive": true,
+      "group": "Daido",
+      "email": "undefined.undefined@undefined.net",
+      "phone": "+7 (992) 537-3433",
+      "address": "816 Jamaica Avenue, Matheny, Arkansas, 1482"
+    },
+    {
+      "id": 4,
+      "name": "Ilene Mathis",
+      "isActive": true,
+      "group": "Grupoli",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (963) 467-2127",
+      "address": "977 Catherine Street, Unionville, Colorado, 5707"
+    },
+    {
+      "id": 5,
+      "name": "Hart Henderson",
+      "isActive": true,
+      "group": "Eternis",
+      "email": "undefined.undefined@undefined.name",
+      "phone": "+7 (817) 584-2072",
+      "address": "102 Dwight Street, Barclay, Hawaii, 484"
+    },
+    {
+      "id": 6,
+      "name": "Karla Hendrix",
+      "isActive": false,
+      "group": "Everest",
+      "email": "undefined.undefined@undefined.us",
+      "phone": "+7 (874) 478-3327",
+      "address": "503 Turner Place, Harrison, Guam, 4939"
+    },
+    {
+      "id": 7,
+      "name": "Gaines Calderon",
+      "isActive": true,
+      "group": "Printspan",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (908) 535-3868",
+      "address": "884 Regent Place, Rockbridge, Virgin Islands, 6515"
+    },
+    {
+      "id": 8,
+      "name": "Holland Vinson",
+      "isActive": true,
+      "group": "Geostele",
+      "email": "undefined.undefined@undefined.co.uk",
+      "phone": "+7 (910) 403-3631",
+      "address": "850 Metrotech Courtr, Dexter, Federated States Of Micronesia, 416"
+    },
+    {
+      "id": 9,
+      "name": "Sherry Carey",
+      "isActive": false,
+      "group": "Zaggle",
+      "email": "undefined.undefined@undefined.io",
+      "phone": "+7 (862) 556-3592",
+      "address": "965 Woods Place, Clay, Alabama, 7377"
+    },
+    {
+      "id": 10,
+      "name": "Smith Frost",
+      "isActive": false,
+      "group": "Fanfare",
+      "email": "undefined.undefined@undefined.org",
+      "phone": "+7 (896) 432-2865",
+      "address": "571 Elizabeth Place, Sharon, New Hampshire, 7677"
+    },
+    {
+      "id": 11,
+      "name": "Ray Rutledge",
+      "isActive": true,
+      "group": "Joviold",
+      "email": "undefined.undefined@undefined.tv",
+      "phone": "+7 (986) 510-3487",
+      "address": "446 Friel Place, Sena, Mississippi, 7838"
+    },
+    {
+      "id": 12,
+      "name": "Cathryn Shelton",
+      "isActive": false,
+      "group": "Hatology",
+      "email": "undefined.undefined@undefined.info",
+      "phone": "+7 (893) 526-2612",
+      "address": "711 Durland Place, Rowe, Nebraska, 4963"
+    },
+    {
+      "id": 13,
+      "name": "Dollie Mcmillan",
+      "isActive": true,
+      "group": "Biolive",
+      "email": "undefined.undefined@undefined.com",
+      "phone": "+7 (803) 563-2170",
+      "address": "784 Hanover Place, Titanic, New York, 4903"
+    },
+    {
+      "id": 14,
+      "name": "Brandy Serrano",
+      "isActive": false,
+      "group": "Futuris",
+      "email": "undefined.undefined@undefined.ca",
+      "phone": "+7 (960) 406-2500",
+      "address": "927 Ryder Avenue, Lookingglass, American Samoa, 910"
+    },
+    {
+      "id": 15,
+      "name": "Goff Marsh",
+      "isActive": true,
+      "group": "Pyramis",
+      "email": "undefined.undefined@undefined.net",
+      "phone": "+7 (811) 476-2870",
+      "address": "439 Berriman Street, Oley, North Carolina, 5605"
+    },
+    {
+      "id": 16,
+      "name": "Valenzuela Wilkins",
+      "isActive": true,
+      "group": "Comvex",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (832) 445-3766",
+      "address": "621 Oriental Boulevard, Morriston, Maryland, 7079"
+    },
+    {
+      "id": 17,
+      "name": "Yesenia Colon",
+      "isActive": true,
+      "group": "Micronaut",
+      "email": "undefined.undefined@undefined.name",
+      "phone": "+7 (850) 469-3375",
+      "address": "201 Bank Street, Allison, Florida, 397"
+    },
+    {
+      "id": 18,
+      "name": "Estelle Kemp",
+      "isActive": true,
+      "group": "Zedalis",
+      "email": "undefined.undefined@undefined.us",
+      "phone": "+7 (804) 458-3244",
+      "address": "271 Robert Street, Bangor, Maine, 3917"
+    },
+    {
+      "id": 19,
+      "name": "Keri Dorsey",
+      "isActive": true,
+      "group": "Vicon",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (900) 410-2795",
+      "address": "679 Brevoort Place, Wattsville, New Jersey, 9904"
+    },
+    {
+      "id": 20,
+      "name": "Lucas Patterson",
+      "isActive": true,
+      "group": "Vurbo",
+      "email": "undefined.undefined@undefined.co.uk",
+      "phone": "+7 (888) 590-2143",
+      "address": "876 Linwood Street, Vincent, Louisiana, 1444"
+    },
+    {
+      "id": 21,
+      "name": "Solis Perry",
+      "isActive": false,
+      "group": "Pyramia",
+      "email": "undefined.undefined@undefined.io",
+      "phone": "+7 (915) 459-2941",
+      "address": "790 Willoughby Street, Beason, South Carolina, 6878"
+    },
+    {
+      "id": 22,
+      "name": "Kathleen Patrick",
+      "isActive": true,
+      "group": "Zytrac",
+      "email": "undefined.undefined@undefined.org",
+      "phone": "+7 (824) 443-2612",
+      "address": "560 Lefferts Avenue, Chemung, Virginia, 6687"
+    },
+    {
+      "id": 23,
+      "name": "Fitzpatrick Mcguire",
+      "isActive": true,
+      "group": "Renovize",
+      "email": "undefined.undefined@undefined.tv",
+      "phone": "+7 (862) 581-2560",
+      "address": "875 George Street, Cataract, Montana, 1141"
+    },
+    {
+      "id": 24,
+      "name": "Cornelia Lynch",
+      "isActive": false,
+      "group": "Thredz",
+      "email": "undefined.undefined@undefined.info",
+      "phone": "+7 (944) 402-2369",
+      "address": "558 Columbia Place, Wildwood, Wisconsin, 143"
+    },
+    {
+      "id": 25,
+      "name": "Gilbert Moon",
+      "isActive": true,
+      "group": "Savvy",
+      "email": "undefined.undefined@undefined.com",
+      "phone": "+7 (873) 598-2676",
+      "address": "624 Vandervoort Place, Jugtown, Utah, 3120"
+    },
+    {
+      "id": 26,
+      "name": "Barr Pierce",
+      "isActive": true,
+      "group": "Aquasure",
+      "email": "undefined.undefined@undefined.ca",
+      "phone": "+7 (830) 584-3036",
+      "address": "208 Burnett Street, Comptche, Missouri, 716"
+    },
+    {
+      "id": 27,
+      "name": "Leola Villarreal",
+      "isActive": false,
+      "group": "Teraprene",
+      "email": "undefined.undefined@undefined.net",
+      "phone": "+7 (919) 537-2607",
+      "address": "475 Dean Street, Blairstown, Kansas, 493"
+    },
+    {
+      "id": 28,
+      "name": "Marks Parker",
+      "isActive": true,
+      "group": "Zoxy",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (801) 418-2410",
+      "address": "770 Bergen Court, Ventress, Kentucky, 3395"
+    },
+    {
+      "id": 29,
+      "name": "Dolly Battle",
+      "isActive": true,
+      "group": "Eclipto",
+      "email": "undefined.undefined@undefined.name",
+      "phone": "+7 (818) 430-2198",
+      "address": "764 Frank Court, Smeltertown, Marshall Islands, 7476"
+    },
+    {
+      "id": 30,
+      "name": "Bowman Mann",
+      "isActive": false,
+      "group": "Zialactic",
+      "email": "undefined.undefined@undefined.us",
+      "phone": "+7 (891) 497-3438",
+      "address": "872 Dahl Court, Bison, Oregon, 9469"
+    },
+    {
+      "id": 31,
+      "name": "Adams Roman",
+      "isActive": false,
+      "group": "Satiance",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (925) 409-2532",
+      "address": "717 Crown Street, Floriston, Texas, 1340"
+    },
+    {
+      "id": 32,
+      "name": "Merrill Vaughan",
+      "isActive": true,
+      "group": "Flumbo",
+      "email": "undefined.undefined@undefined.co.uk",
+      "phone": "+7 (956) 554-3967",
+      "address": "427 Quentin Road, Bethany, California, 4874"
+    },
+    {
+      "id": 33,
+      "name": "Bernadine Kane",
+      "isActive": false,
+      "group": "Cubix",
+      "email": "undefined.undefined@undefined.io",
+      "phone": "+7 (868) 411-3313",
+      "address": "424 Congress Street, Brecon, Delaware, 567"
+    },
+    {
+      "id": 34,
+      "name": "Jo Morgan",
+      "isActive": false,
+      "group": "Tropolis",
+      "email": "undefined.undefined@undefined.org",
+      "phone": "+7 (980) 455-2134",
+      "address": "429 Grafton Street, Enetai, Michigan, 6628"
+    },
+    {
+      "id": 35,
+      "name": "Graciela Townsend",
+      "isActive": true,
+      "group": "Hometown",
+      "email": "undefined.undefined@undefined.tv",
+      "phone": "+7 (954) 571-3213",
+      "address": "726 Harrison Avenue, Tetherow, Massachusetts, 7026"
+    },
+    {
+      "id": 36,
+      "name": "Stanton Nash",
+      "isActive": true,
+      "group": "Medmex",
+      "email": "undefined.undefined@undefined.info",
+      "phone": "+7 (967) 405-2809",
+      "address": "527 Kenmore Court, Shasta, Nevada, 7946"
+    },
+    {
+      "id": 37,
+      "name": "Moses Mays",
+      "isActive": true,
+      "group": "Tubalum",
+      "email": "undefined.undefined@undefined.com",
+      "phone": "+7 (933) 417-2051",
+      "address": "313 Bills Place, Lisco, Idaho, 4509"
+    },
+    {
+      "id": 38,
+      "name": "Aimee Holland",
+      "isActive": false,
+      "group": "Mangelica",
+      "email": "undefined.undefined@undefined.ca",
+      "phone": "+7 (832) 545-3457",
+      "address": "501 Beekman Place, Mapletown, Indiana, 1779"
+    },
+    {
+      "id": 39,
+      "name": "Guthrie Wright",
+      "isActive": false,
+      "group": "Orboid",
+      "email": "undefined.undefined@undefined.net",
+      "phone": "+7 (911) 441-2290",
+      "address": "593 Harkness Avenue, Salix, Iowa, 9105"
+    },
+    {
+      "id": 40,
+      "name": "Trisha Watkins",
+      "isActive": false,
+      "group": "Egypto",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (857) 569-3718",
+      "address": "767 Meserole Street, Witmer, North Dakota, 1960"
+    },
+    {
+      "id": 41,
+      "name": "Pansy Valdez",
+      "isActive": true,
+      "group": "Silodyne",
+      "email": "undefined.undefined@undefined.name",
+      "phone": "+7 (910) 598-2400",
+      "address": "800 Losee Terrace, Winfred, District Of Columbia, 8714"
+    },
+    {
+      "id": 42,
+      "name": "Lindsay Anthony",
+      "isActive": true,
+      "group": "Zork",
+      "email": "undefined.undefined@undefined.us",
+      "phone": "+7 (856) 490-2577",
+      "address": "483 Eagle Street, Boyd, Connecticut, 7500"
+    },
+    {
+      "id": 43,
+      "name": "Jeanette Green",
+      "isActive": false,
+      "group": "Assistix",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (813) 442-3349",
+      "address": "946 Seaview Avenue, Saranap, West Virginia, 7105"
+    },
+    {
+      "id": 44,
+      "name": "Darlene Tyler",
+      "isActive": false,
+      "group": "Iplax",
+      "email": "undefined.undefined@undefined.co.uk",
+      "phone": "+7 (967) 537-3011",
+      "address": "483 Sutter Avenue, Ferney, Pennsylvania, 896"
+    },
+    {
+      "id": 45,
+      "name": "Frieda Barnett",
+      "isActive": true,
+      "group": "Gaptec",
+      "email": "undefined.undefined@undefined.io",
+      "phone": "+7 (957) 525-2513",
+      "address": "140 Sumpter Street, Dundee, Illinois, 5215"
+    },
+    {
+      "id": 46,
+      "name": "Carson Clemons",
+      "isActive": true,
+      "group": "Aquafire",
+      "email": "undefined.undefined@undefined.org",
+      "phone": "+7 (875) 447-3349",
+      "address": "747 Grimes Road, Harviell, New Mexico, 7352"
+    },
+    {
+      "id": 47,
+      "name": "Tammie Mccoy",
+      "isActive": false,
+      "group": "Centree",
+      "email": "undefined.undefined@undefined.tv",
+      "phone": "+7 (964) 400-3801",
+      "address": "866 Will Place, Boonville, Rhode Island, 3890"
+    },
+    {
+      "id": 48,
+      "name": "Ellis Morales",
+      "isActive": true,
+      "group": "Architax",
+      "email": "undefined.undefined@undefined.info",
+      "phone": "+7 (978) 470-2632",
+      "address": "396 Coffey Street, Bowden, Minnesota, 4527"
+    },
+    {
+      "id": 49,
+      "name": "Aguilar Walsh",
+      "isActive": false,
+      "group": "Anivet",
+      "email": "undefined.undefined@undefined.com",
+      "phone": "+7 (935) 526-2468",
+      "address": "535 Crawford Avenue, Omar, Palau, 4648"
+    },
+    {
+      "id": 50,
+      "name": "Staci Mclaughlin",
+      "isActive": false,
+      "group": "Geologix",
+      "email": "undefined.undefined@undefined.ca",
+      "phone": "+7 (845) 507-2415",
+      "address": "339 Ludlam Place, Saticoy, Wyoming, 456"
+    },
+    {
+      "id": 51,
+      "name": "Marissa Dickerson",
+      "isActive": true,
+      "group": "Visualix",
+      "email": "undefined.undefined@undefined.net",
+      "phone": "+7 (937) 484-3911",
+      "address": "933 Branton Street, Defiance, Vermont, 1607"
+    },
+    {
+      "id": 52,
+      "name": "Socorro Hicks",
+      "isActive": true,
+      "group": "Enomen",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (917) 576-3253",
+      "address": "296 School Lane, Loretto, Washington, 1691"
+    },
+    {
+      "id": 53,
+      "name": "Pugh Romero",
+      "isActive": true,
+      "group": "Exozent",
+      "email": "undefined.undefined@undefined.name",
+      "phone": "+7 (993) 470-3004",
+      "address": "716 Waldane Court, Martinsville, South Dakota, 633"
+    },
+    {
+      "id": 54,
+      "name": "Leta Guzman",
+      "isActive": false,
+      "group": "Nexgene",
+      "email": "undefined.undefined@undefined.us",
+      "phone": "+7 (843) 492-3579",
+      "address": "496 Folsom Place, Jardine, Puerto Rico, 9165"
+    },
+    {
+      "id": 55,
+      "name": "Camille Sanchez",
+      "isActive": false,
+      "group": "Hyplex",
+      "email": "undefined.undefined@undefined.biz",
+      "phone": "+7 (889) 506-2814",
+      "address": "241 Hegeman Avenue, Nanafalia, Tennessee, 9926"
+    },
+    {
+      "id": 56,
+      "name": "Marta Webb",
+      "isActive": true,
+      "group": "Synkgen",
+      "email": "undefined.undefined@undefined.co.uk",
+      "phone": "+7 (960) 549-3834",
+      "address": "968 Preston Court, Mathews, Arizona, 4787"
+    },
+    {
+      "id": 57,
+      "name": "Carrie Cline",
+      "isActive": true,
+      "group": "Imant",
+      "email": "undefined.undefined@undefined.io",
+      "phone": "+7 (986) 476-2684",
+      "address": "312 Foster Avenue, Sanborn, Ohio, 5662"
+    },
+    {
+      "id": 58,
+      "name": "Kimberley Medina",
+      "isActive": true,
+      "group": "Megall",
+      "email": "undefined.undefined@undefined.org",
+      "phone": "+7 (881) 575-3611",
+      "address": "685 Caton Avenue, Oneida, Alaska, 9929"
+    },
+    {
+      "id": 59,
+      "name": "Mcmillan Mccormick",
+      "isActive": false,
+      "group": "Kangle",
+      "email": "undefined.undefined@undefined.tv",
+      "phone": "+7 (880) 533-2048",
+      "address": "535 Canal Avenue, Warren, Northern Mariana Islands, 9938"
+    },
+    {
+      "id": 60,
+      "name": "Lavonne Harrington",
+      "isActive": false,
+      "group": "Andryx",
+      "email": "undefined.undefined@undefined.info",
+      "phone": "+7 (964) 470-2954",
+      "address": "369 Auburn Place, Brownsville, Georgia, 3098"
+    },
+    {
+      "id": 61,
+      "name": "Margret Durham",
+      "isActive": true,
+      "group": "Pharmacon",
+      "email": "undefined.undefined@undefined.com",
+      "phone": "+7 (819) 513-3341",
+      "address": "483 Bogart Street, Glenshaw, Arkansas, 7005"
+    },
+    {
+      "id": 62,
+      "name": "Tara Vang",
+      "isActive": true,
+      "group": "Bleeko",
+      "email": "undefined.undefined@undefined.ca",
+      "phone": "+7 (934) 504-2120",
+      "address": "832 Hanson Place, Genoa, Colorado, 5581"
+    },
+    {
+      "id": 63,
+      "name": "Willis Drake",
+      "isActive": true,
+      "group": "Pulze",
+      "email": "undefined.undefined@undefined.net",
+      "phone": "+7 (955) 520-3481",
+      "address": "726 Bay Parkway, Thomasville, Hawaii, 3465"
+    },
+    {
+      "name": "Елена",
+      "id": 64
+    },
+    {
+      "id": 65
+    },
+    {
+      "id": 66
+    },
+    {
+      "id": 67
+    },
+    {
+      "id": 68
+    },
+    {
+      "id": 69
+    },
+    {
+      "id": 70
+    },
+    {
+      "id": 71
+    },
+    {
+      "id": 72
+    },
+    {
+      "id": 73
+    },
+    {
+      "id": 74
+    },
+    {
+      "id": 75
+    },
+    {
+      "id": 76
+    },
+    {
+      "id": 77
+    },
+    {
+      "id": 78
+    },
+    {
+      "id": 79
+    },
+    {
+      "id": 80
+    },
+    {
+      "id": 81
+    },
+    {
+      "id": 82
+    },
+    {
+      "id": 83
+    },
+    {
+      "id": 84
+    },
+    {
+      "id": 85
+    },
+    {
+      "id": 86
+    },
+    {
+      "id": 87
+    },
+    {
+      "id": 88
+    },
+    {
+      "name": "Йцуке",
+      "id": 89
+    },
+    {
+      "name": "qwerty",
+      "id": 90
+    },
+    {
+      "id": 91
+    },
+    {
+      "id": 92
+    },
+    {
+      "id": 93
+    },
+    {
+      "id": 94
+    },
+    {
+      "id": 95
+    },
+    {
+      "id": 96
+    },
+    {
+      "id": 97
+    },
+    {
+      "id": 98
+    },
+    {
+      "id": 99
+    },
+    {
+      "id": 100
+    },
+    {
+      "id": 101
+    },
+    {
+      "name": "Йцуке",
+      "id": 102
+    },
+    {
+      "id": 103
+    },
+    {
+      "id": 104
+    }
+  ]
+}
