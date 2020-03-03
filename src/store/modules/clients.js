@@ -21,7 +21,7 @@ export default{
     },
     async addClients({commit},clientsData){
      
-      const clients = await axios.post("http://localhost:3000/clients",{name: clientsData.name,isActive: clientsData.isActive,group:clientsData.group,email: clientsData.email,phone: clientsData.phone,address: clientsData.address});
+      const clients = await axios.post("http://localhost:3000/clients",clientsData);
 
       commit('newClients',clients.data)
     },
