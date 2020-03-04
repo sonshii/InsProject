@@ -5,11 +5,13 @@
         <v-col cols="12" xs="12" sm="12" md="12">
           <div class="title mb-5">Клиенты этой группы</div>
           <v-data-table :headers="headers" :items="checkEnable(true)" class="mb-5 col-lg-12 col-md-12 col-sm-12">
-            <!-- <template v-slot:item.edit="{ item }">
-              <v-icon small @click="editClient(item)">mdi-account-edit-outline</v-icon>
-            </template> -->
+            <template v-slot:item.edit="{ item }">>
+              <EditClients>
+                
+              </EditClients>
+            </template>
             <template v-slot:item.close="{ item }">
-              <v-icon small @click="deleteClients(item.id)">mdi-delete-outline</v-icon>
+              <v-icon small @click="deleteClient(item.id)">mdi-delete-outline</v-icon>
             </template>
           </v-data-table>
         </v-col>
@@ -41,11 +43,14 @@
 
 <script>
 import AddClients from "../components/AddClients";
+import EditClients from "../components/EditClients";
 
 export default {
   components: {
-    AddClients
+    AddClients,
+    EditClients
   },
+  props: ['item'],
   data: () => ({
     headers: [
       { text: "ФИО", align: "left", value: "name", sortable: false },
@@ -79,12 +84,12 @@ export default {
     // Ищет индекс выбранного элемента , в массиве с этим индексом меняет enable на false
 
     deleteClient(item) {
-      
+      console.log(item);
 
-      const index = this.allClients.indexOf(item);
-      if (confirm("Вы уверены что хотите удалить элемент?")) {
-        this.allClients[index].isActive = false;
-      }
+      // const index = this.allClients.indexOf(item);
+      // if (confirm("Вы уверены что хотите удалить элемент?")) {
+      //   this.allClients[index].isActive = false;
+      // }
     },
     // editClient(item){
 
