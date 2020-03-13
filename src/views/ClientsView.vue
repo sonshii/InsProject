@@ -5,13 +5,11 @@
         <v-col cols="12" xs="12" sm="12" md="12">
           <div class="title mb-5">Клиенты этой группы</div>
           <v-data-table :headers="headers" :items="checkEnable(true)" class="mb-5 col-lg-12 col-md-12 col-sm-12">
-            <template v-slot:item.edit="{ item }">>
-              <EditClients>
-                
-              </EditClients>
+            <template v-slot:item.edit="{ item }">
+              <EditClients v-bind:dataClient=item ></EditClients>
             </template>
             <template v-slot:item.close="{ item }">
-              <v-icon small @click="deleteClient(item.id)">mdi-delete-outline</v-icon>
+              <v-icon small @click="deleteClients(item.id)">mdi-delete-outline</v-icon>
             </template>
           </v-data-table>
         </v-col>
@@ -50,7 +48,6 @@ export default {
     AddClients,
     EditClients
   },
-  props: ['item'],
   data: () => ({
     headers: [
       { text: "ФИО", align: "left", value: "name", sortable: false },
@@ -73,28 +70,15 @@ export default {
     this.initClients();
   },
   methods: {
+    deleteClients(id){
+      this.clientsData = this.$store.dispatch("deleteClients",{
+          id: id
+        });
+    },
     initClients() {
       this.$store.dispatch("fetchClients");
     },
-    // initDeleteClients() {
-    //   this.$store.dispatch("deleteClients");
-    // },
     
-    // Удаляет клиентов из таблицы
-    // Ищет индекс выбранного элемента , в массиве с этим индексом меняет enable на false
-
-    deleteClient(item) {
-      console.log(item);
-
-      // const index = this.allClients.indexOf(item);
-      // if (confirm("Вы уверены что хотите удалить элемент?")) {
-      //   this.allClients[index].isActive = false;
-      // }
-    },
-    // editClient(item){
-
-    // }
-
     // Изменяет значение enable (если true - то заносит clients в  таблицу, если false - то в select)
 
     checkEnable(bool) {

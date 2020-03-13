@@ -10,7 +10,7 @@ export default{
     newClients(state, client){
       state.clients.push(client);
     },
-    //removeClients: (state,id) => state.clients = state.clients.filter(clients => clients.id !== id)
+    removeClients: (state,id) => state.clients = state.clients.filter(clients => clients.id !== id),
     editClients(state, clientsData){
       const index = state.clients.findIndex(clients => clients.id === clientsData.id);
       if (index !== -1) {
@@ -30,11 +30,11 @@ export default{
 
       commit('newClients',clients.data)
     },
-    // async deleteClients({ commit }, id) {
-    //   await axios.delete(`http://localhost:3000/clients/${id}`);
+    async deleteClients({ commit }, clientsData) {
+      await axios.delete(`http://localhost:3000/clients/${clientsData.id}`);
   
-    //   commit('removeClients', id);
-    // },
+      commit('removeClients', clientsData.id);
+    },
     async updateClients({ commit }, clientsData) {
       const clients = await axios.put(
         `http://localhost:3000/clients/${clientsData.id}`,
