@@ -10,7 +10,7 @@
           <v-text-field label="Имя" v-model="name" :rules="nameRules" required></v-text-field>
           <v-select :items="allClients" item-text="group" label="Группа" v-model="group"></v-select>
           <v-text-field label="Почта" v-model="email" :rules="emailRules" required></v-text-field>
-          <v-text-field label="Телефон" v-model="phone" :rules="phoneRules"></v-text-field>
+          <v-text-field label="Телефон" v-model="phone" :rules="phoneRules"  v-mask="'+7 (###) ###-####'"></v-text-field>
           <v-text-field label="Адрес" v-model="address"></v-text-field>
           <v-btn  class="mx-3 mt-3" @click="addClient()">Добавить клиента</v-btn>
         </v-form>

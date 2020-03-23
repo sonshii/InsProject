@@ -4,6 +4,8 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import './styles/style.css';
 
+import VueMask from 'v-mask'
+Vue.use(VueMask);
 
 import router from './router'
 import VueRouter from 'vue-router';
