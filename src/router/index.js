@@ -5,7 +5,12 @@ import GroupsView from '../views/GroupsView.vue'
 
 Vue.use(VueRouter)
 
-const routes = [{
+const routes = [
+  {
+    path: '', 
+    component: ClientsView
+  },
+  {
     path: '/ClientsView',
     name: 'Клиенты',
     component: ClientsView

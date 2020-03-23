@@ -35,7 +35,10 @@ export default {
         v => /.+@.+\..+/.test(v) || "E-mail must be valid"
       ],
       phone: "",
-      phoneRules: [],
+      phoneRules: [
+        v => !!v || "Phone is required",
+        v => /\+7 \(\d{3}\) \d{3}-\d{4}/.test(v) || "Phone must be valid"
+      ],
       address: "",
       clientData: []
     };
@@ -63,6 +66,7 @@ export default {
           phone: this.phone, 
           address: this.address
         });
+        this.dialog = false;
       }
     }
   }
